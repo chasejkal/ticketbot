@@ -1,7 +1,7 @@
-MongoDB: "mongodb://localhost/Tickets"
-Token: "BOT-TOKEN"
+MongoDB: "mongodb+srv://chase:<password>@cluster0.kagwd.mongodb.net/tickets"
+Token: "ODE1ODc3OTk2MzA0MTM4MjQw.YDyzmA.qshKsRGkBi7mRl7tU_Q-Ywtr69s"
 Prefix: "-"
-GuildID: "GUILD-ID"
+GuildID: "810421728232603658"
 
 Tickets: 
   ChannelName: "ticket-{user-tag}"
