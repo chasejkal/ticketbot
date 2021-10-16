@@ -1,0 +1,215 @@
+Blacklisted: 
+    Title: "Unable to open ticket"
+    Description: "{user-mention} was unable to open ticket as they are blacklisted from opening tickets for reason `{reason}`"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+Menu: 
+    Title: "Support Ticket System"
+    Description: "Thank you for creating a ticket!\n> A member of our support team will be with you shortly.\n> While you wait, please explain your issue in detail."
+    Image: "https://i.zorino.in/IZZCanva_ASxYrrMKlL.png"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+MenuOptions: 
+    Title: "Support Ticket System"
+    Description: "Please select one of the options below, so that we can help you out!\n{data}\n\n**__NOTE__:** Each option will ask you a series of questions, please fill them out correctly so that we can complete the ticket as fast as possible."
+    Image: "https://i.zorino.in/IZZCanva_ASxYrrMKlL.png"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+MenuQuestionLayout: 
+    Title: "{category} Ticket • [{min}/{max}]"
+    Description: "__**Answer the Following**__\n> {question}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+TicketCreated: 
+    Title: "Ticket Created"
+    Description: "Your new ticket has been created in <#{channel-id}>"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+InvalidTicket:
+    Title: "Unable to close ticket"
+    Description: "Ticket doesn't exist in the database."
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+TicketClosing:
+    Transcript:
+        Title: "Ticket closing"
+        Description: "This ticket has been closed by <@{closed-by}> for reason: `{reason}`\n\n> This channel will be deleted in under 5 seconds.\n> Transcript can be found [here]({transcript-link})"
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
+    Normal: 
+        Title: "Ticket closing"
+        Description: "This ticket has been closed by <@{closed-by}> for reason: `{reason}`\n\n> This channel will be deleted in under 5 seconds."
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
+    
+TicketClosingDM:
+    Title: "Ticket closing"
+    Description: "{channel} ticket has been closed by {closed-by} for reason: `{reason}`\n> Transcript can be found [here]({transcript-link})"
+    Footer: "{bot-tag}"
+    FooterIcon: "{bot-pfp}"
+    Timestamp: true
+Panel: 
+    Title: "Support Tickets"
+    Description: "🙋‍♂️ Facing difficulty with something and looking for some assistance regarding it? Tickets are an excellent way to get in touch with our Support Team to resolve all your issues!\n> Create one by pressing the button below and our staff team will be with you as soon as possible.\n\n**__Note__**: Support Team will try their best to resolve your issue as fast as possible, please be patient and do not ping them, unless important."
+    Footer: "{bot-username}"
+    FooterIcon: "{bot-pfp}"
+    Button: 
+        Text: "New Ticket"
+        Color: "Green"
+        Emoji: "884386956715364355"
+ResponseEmbed: 
+    Layout: "{index} • **{question}**\n```{answer}```"
+    Title: "{category} Ticket By: {user-tag}"
+    Description: "{data}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+NoReason: 
+    Title: "Unable to open ticket"
+    Description: "{user-mention} was unable to open ticket as They need to specify a reason."
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+UserBlacklisted: 
+    Title: "User Blacklisted"
+    Description: "{user} was blacklisted from creating tickets for reason: `{reason}`"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+UserWhitelisted: 
+    Title: "User Whitelisted"
+    Description: "{user} was whitelisted from creating tickets"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+TicketRenamed:
+    Title: "Ticket Renamed"
+    Description: "Ticket was renamed to {new-name}!"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+UserAdd:
+    Title: "User Added"
+    Description: "{user} was added to the ticket"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+UserRemove:
+    Title: "User Removed"
+    Description: "{user} was remove from the ticket"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+General:
+    Announcement: 
+        Title: "📣 New Announcement!"
+        Description: "{text}"
+        Footer: "Announcement Posted by {user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+    Ping:
+        Author: "{bot-tag}'s Ping"
+        AuthorIcon: "{bot-pfp}"
+        Description: "**Bot latency**: {bot-latency}\n**API latency**: {api-latency}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+    Help: 
+        Title: "Command Info - {command-name}"
+        Description: "{command-description}\n\n**Usage**\n> `{command-usage}`\n**Aliases**\n> {command-aliases}\n**Slash Command**: \\{command-isSlashEnabled}"
+        Footer: "{user-tag}"
+        FooterTag: "{user-tag}"
+        Timestamp: true
+    Statistics: 
+        Title: "{user-tag}'s Statistics"
+        Fields:
+            - Name: "📊 Ticket Stats"
+              Value: "• **Response Rating**: {lvl}\n• **Tickets Answred**: {ticket-answred}\n• **Highest Role**: <@&{highest-role}>" 
+            - Name: "📈 Messages Stats"
+              Value: "• **All Time**: {all-messages}\n• **30 Days**: {30days-messages}\n• **7 Days**: {7days-messages}\n• **24 Hours**: {24hours-messages}"
+        Thumbnail: "{user-pfp}"
+        FooterIcon: "{bot-pfp}"
+        Footer: "{bot-tag}"
+        Timestamp: true
+Presets: 
+    NoPermission: 
+        Title: "Unable to run command"
+        Description: "You do not have enough permission to run this command\n\n**Permissions**\n> {roles}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+    Error: 
+        Title: "Unable to perform action"
+        Description: "{error}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+Logs: 
+    TicketCreated: 
+        Title: "📝 Ticket Logs | Ticket Created"
+        Fields: 
+            - Name: "• Creator Info"
+              Value: "> {user-mention} | @{user-tag}\n> {user-id}"
+            - Name: "• Ticket Info"
+              Value: "> #{channel-name} | <#{channel-id}>\n> `{reason}`"
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
+    TicketClosed: 
+        Title: "📝 Ticket Logs | Ticket Closed"
+        Description: "Transcript can be found [here]({transcript})"
+        Fields: 
+            - Name: "• Ticket Creator Info"
+              Value: "> {creator-mention} | @{creator-tag}\n> {creator-id}"
+            - Name: "• Closer Info"
+              Value: "> {user-mention} | @{user-tag}\n> {user-id}"
+            - Name: "• Ticket Info"
+              Value: "> #{channel-name} | <#{channel-id}>"
+            - Name: "• Reasons"
+              Value: "> **Open**: `{open-reason}`\n> **Close**: `{close-reason}`"
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
+    TranscriptCreated:
+        Title: "📝 Ticket Logs | Transcript Created"
+        Description: "Transcript can be found [here]({transcript})"
+        Fields: 
+            - Name: "• Ticket Creator Info"
+              Value: "> {creator-mention} | @{creator-tag}\n> {creator-id}"
+            - Name: "• Ticket Info"
+              Value: "> #{channel-name} | <#{channel-id}>"
+            - Name: "• Transcript"
+              Value: "> {transcript}"
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
+    UserBlacklisted:
+        Title: "📝 Ticket Logs | User Blacklisted"
+        Fields: 
+            - Name: "• Blacklisted user"
+              Value: "> {blacklisted-mention} | @{blacklisted-tag}\n> {blacklisted-id}"
+            - Name: "• Blacklisted by"
+              Value: "> @{user-tag} | <@{user-id}>"
+            - Name: "• Reason"
+              Value: "> `{reason}`"
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
+    UserWhitelisted:
+        Title: "📝 Ticket Logs | User Whitelisted"
+        Fields: 
+            - Name: "• Whitelisted user"
+              Value: "> {whitelisted-mention} | @{whitelisted-tag}\n> {whitelisted-id}"
+            - Name: "• Whitelisted by"
+              Value: "> @{user-tag} | <@{user-id}>"
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true

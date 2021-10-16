@@ -1,0 +1,28 @@
+{
+	"name": "advanced-ticket-bot",
+	"version": "3.1.0",
+	"description": "An Advanced Ticket Bot For Discord written in Node.js Discord.js-v13",
+	"main": "index.js",
+	"dependencies": {
+		"@discordjs/rest": "0.1.0-canary.0",
+		"axios": "^0.23.0",
+		"chalk": "^4.1.2",
+		"console-stamp": "^3.0.3",
+		"date-differ": "^1.0.1",
+		"discord-api-types": "^0.22.0",
+		"discord.js": "^13.2.0",
+		"express": "^4.17.1",
+		"moment": "^2.29.1",
+		"mongoose": "^6.0.0",
+		"ms": "^2.1.3",
+		"request-ip": "^2.1.3",
+		"serve-favicon": "^2.5.0",
+		"yaml": "^1.10.2"
+	},
+	"scripts": {
+		"dev": "nodemon index.js --show-full-errors -e js,json,yml",
+		"start": "node index.js"
+	},
+	"author": "@Zorino#1110",
+	"license": "ISC"
+}

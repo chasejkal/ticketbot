@@ -1,0 +1,99 @@
+General: 
+  Ping: 
+    Description: "Pings the bot"
+    Usage: "ping"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Help: 
+    Description: "Displays all Bot Commands"
+    Usage: "help"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Announce: 
+    Description: "Sends an announcement Embed"
+    Usage: "announce <text>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Statistics: 
+    Description: "View Statistics of a user"
+    Usage: "statistics <@user>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+Tickets: 
+  Panel: 
+    Description: "Sends a panel to open a ticekt"
+    Usage: "panel"
+    Aliases: []
+    Permission:
+      - "🌟"
+      - "Developer"
+    SlashCommand: 
+      Enabled: true
+  New: 
+    Description: "Open a ticket"
+    Usage: "new <reason>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Close: 
+    Description: "Closes a ticket"
+    Usage: "close <reason>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Blacklist: 
+    Description: "Blacklist a user from opening a ticket"
+    Usage: "blacklist <user> <reason>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Whitelist: 
+    Description: "Whitelist a user from opening a ticket"
+    Usage: "Whitelist <user>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Rename: 
+    Description: "Renames the ticket channel"
+    Usage: "rename <new-name>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Add: 
+    Description: "Adds a user to the ticket channel"
+    Usage: "add <user>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true
+  Remove: 
+    Description: "Remove a user from the ticket"
+    Usage: "remove <user>"
+    Aliases: []
+    Permission:
+      - "@everyone"
+    SlashCommand: 
+      Enabled: true

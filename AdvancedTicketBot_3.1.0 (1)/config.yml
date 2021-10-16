@@ -1,0 +1,177 @@
+MongoDB: "mongodb://localhost/Tickets"
+Token: "BOT-TOKEN"
+Prefix: "-"
+GuildID: "GUILD-ID"
+
+Tickets: 
+  ChannelName: "ticket-{user-tag}"
+  DefaultCategory: "🎫 Tickets"
+  DefaultSupport: "Developer"
+  OpenReasonRequired: false
+  Ping:
+    User: true
+    Staff: true
+  CloseButton:
+    Enabled: true
+    Permission: "🎫 Support"
+    Text: "Close"
+    Color: "Red"
+    Emoji: "883595607443406859"
+
+Transcripts: 
+  Enabled: true
+  SelfHost: false
+  Port: 8015
+  Domain: "https://tickets.zorino.in/"
+  SendToCreator: true
+  SendToMembers: true
+
+Logs: 
+  TicketCreated: "TicketCreated"
+  TicketClosed: "TicketClosed"
+  UserWhitelisted: "UserWhitelisted"
+  UserBlacklisted: "UserBlacklisted"
+  TranscriptCreated: "TranscriptCreated"
+  ConsoleLog:
+    TicketCreated: true
+    TicketClosed: true
+    UserWhitelisted: true
+    UserBlacklisted: true
+    TranscriptCreated: true
+
+Categories: 
+  "1": 
+    - Ticket:
+        Title: "Support"
+        Note: "Support For Resources on MC-Market"
+        Category: "🎫 Support"
+        ChannelName: "support-{user-tag}"
+        SupportRoles: 
+          - "Support"
+        Questions:
+          - "How can we help you today?"
+          - "If you are facing any errors, Please upload them to pastebin and share the link here." 
+      Button:
+        Enabled: true
+        CustomID: "1"
+        Text: "Support"
+        Color: "Blurple"
+        Emoji: false
+                
+    - Ticket:
+        Title: "Comission"
+        Note: "Request for Custom Bots/Features"
+        Category: "🎫 Commissions"
+        ChannelName: "comission-{user-tag}"
+        SupportRoles:
+          - "Developer"
+        Questions: 
+          - "What would you like to comission?"
+          - "Please explain in detail about the comission"
+          - "What's your budget?"
+          - "Is there any Timeframe?"
+          - "Do you have any examples? If yes please answer `yes` and send them after questions are finished."
+      Button:
+        Enabled: true
+        CustomID: "ticket_comission"
+        Text: "Comission"
+        Color: "Green"
+        Emoji: false
+
+    - Button:
+        Enabled: true
+        CustomID: "close_ticket"
+        Text: "Close"
+        Color: "Red"
+        Emoji: "883595607443406859"
+  "2": 
+    - Ticket:
+        Title: "SubCategories"
+        Note: "more subcategoreiessssssssssss"
+        SubCategories: 
+          "1":
+            - Ticket: 
+                Title: "SubCategories - 1"
+                Note: "This has no more Sub & No Questions"
+                Category: "➜ Dev Stuff"
+                ChannelName: "test-{user-tag}"
+                SupportRoles: false
+              Button: 
+                Enabled: true
+                CustomID: "ticket_subcategories-1"
+                Text: "SubCategories 1"
+                Color: "Green"
+                Emoji: false
+            - Ticket: 
+                Title: "SubCategories - 2"
+                Note: "This has more Sub"
+                SubCategories: 
+                  "1":
+                    - Ticket: 
+                        Title: "SubSubCategories - 1"
+                        Note: "this asks question"
+                        Category: "➜ Dev Stuff"
+                        ChannelName: "test-{user-tag}"
+                        SupportRoles: false
+                        Questions:
+                          - "Random question"
+                      Button: 
+                        Enabled: true
+                        CustomID: "ticket_subsubcategories-1"
+                        Text: "SubCategories 1"
+                        Color: "Green"
+                        Emoji: false
+              Button: 
+                Enabled: true
+                CustomID: "ticket_subsubcategories-2"
+                Text: "SubCategories 2"
+                Color: "Green"
+                Emoji: false
+            - Button:
+                Enabled: true
+                CustomID: "close_ticket"
+                Text: "Close"
+                Color: "Red"
+                Emoji: "883595607443406859"
+      Button:
+        Enabled: true
+        CustomID: "ticket_subcategories"
+        Text: "SubCategories"
+        Color: "Green"
+        Emoji: false
+Tags: 
+  Enabled: true
+  Prefix: "$"
+  Commands: 
+    # $test
+    - Command: "test"
+      Permission: "Support"
+      Content: "{user-mention}"
+      Embeds: 
+        - Title: "Title - 1"
+          Description: "Description - 1"
+          Footer: "Footer - 1"
+          Author: "Author - 1"
+        - Title: "Title - 2"
+          Description: "Description - 2"
+          Footer: "Footer - 2"
+          Author: "Author - 2"
+
+    # $ticket closing
+    - Command: "ticket-closing"
+      Permission: "Support"
+      Embed: 
+        Title: "Ticket Closing"
+        Description: "This ticket will be closed in 24hrs if there's no response."
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
+    # $anything else
+    - Command: "anything-else"
+      Permission: "Support"
+      Embed: 
+        Title: "Is there anything we can help you with?"
+        Description: "Thank you for using Support! Is there anything else we can help you with today?\n\n> Please note that you can always make another ticket by running -new in <#859374679332356106> if you encounter more issues or have any questions."
+        Footer: "{bot-tag}"
+        FooterIcon: "{bot-pfp}"
+        Timestamp: true
